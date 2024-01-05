@@ -11,7 +11,7 @@
         (negative - expenses, positive - income)
       </label>
       <input
-        type="number"
+        type="text"
         id="amount"
         v-model="amount"
         placeholder="Enter amount..."
