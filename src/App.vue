@@ -36,9 +36,11 @@ onMounted(() => {
 
 //GET TOTAL
 const total = computed(() => {
-  return transactions.value.reduce((acc, transaction) => {
-    return acc + transaction.amount;
-  }, 0).toFixed(2);
+  return transactions.value
+    .reduce((acc, transaction) => {
+      return acc + transaction.amount;
+    }, 0)
+    .toFixed(2);
 });
 
 //GET INCOME
@@ -98,5 +100,3 @@ const saveTransactionToLocalStorage = () => {
   localStorage.setItem("transactions", JSON.stringify(transactions.value));
 };
 </script>
-
-<style></style>
