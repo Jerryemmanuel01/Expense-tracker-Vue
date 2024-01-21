@@ -11,7 +11,6 @@
     </li>
   </ul>
 </template>
-
 <script setup>
 import { defineProps } from "vue";
 
